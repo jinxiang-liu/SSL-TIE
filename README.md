@@ -23,13 +23,13 @@ Keywords: self-supervised representation learning, sound sourcelocalisation, ret
 
 
 
-
-### Environment
+*****************
+## Environment
 - Python==3.6.10
 - PyTorch==1.7.1
 - CUDA_VERSION==11.0
 
-### Dependencies
+## Dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -104,7 +104,7 @@ bash scripts/test_Flickr10k.sh
 
 ## Training
 - Prepare the datasets as mentioned.
-- Use the scripts to train and replace the `dir_of_**set` with your dataset path.
+- Use the scripts to train and replace the `dir_of_**set` variable in the script with your dataset path.
 ```bash 
 bash scripts/train_**.sh
 ```
