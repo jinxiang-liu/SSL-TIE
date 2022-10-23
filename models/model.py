@@ -73,8 +73,8 @@ class AVENet(nn.Module):
         out = torch.einsum('nchw,nc->nhw', img, aud).unsqueeze(1)   
         out1 = self.norm3(self.conv3(out))
         # out2 = self.vpool3(out1)
-        A = torch.einsum('ncqa,nchw->nqa', [img, aud.unsqueeze(2).unsqueeze(3)]).unsqueeze(1)    #  每个audio image pair产生的simlariy  Bx1x14x14
-        A0 = torch.einsum('ncqa,ckhw->nkqa', [img, aud.T.unsqueeze(2).unsqueeze(3)])             #  BxBx14x14
+        A = torch.einsum('ncqa,nchw->nqa', [img, aud.unsqueeze(2).unsqueeze(3)]).unsqueeze(1)    
+        A0 = torch.einsum('ncqa,ckhw->nkqa', [img, aud.T.unsqueeze(2).unsqueeze(3)])            
         A0_ref = self.avgpool(A0).view(B,B) # self.mask    BxB
 
 
@@ -86,7 +86,7 @@ class AVENet(nn.Module):
         else:   
             Neg = 1 - Pos                               # negative region  mask 
 
-        Pos_all =  self.m((A0 - self.epsilon)/self.tau)         # 每个image和所有的audio image 产生的similarity的mask
+        Pos_all =  self.m((A0 - self.epsilon)/self.tau)         
         A0_f = ((Pos_all * A0).view(*A0.shape[:2],-1).sum(-1) / Pos_all.view(*Pos_all.shape[:2],-1).sum(-1) ) * self.mask   # easy negative BxB
         sim = A0_f 
 
