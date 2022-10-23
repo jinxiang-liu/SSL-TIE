@@ -81,7 +81,7 @@ Please download the pretrained model weights through the links and put them in t
 
 
 ### Scripts
-- Training on VGGSound-144k, test on VGGSound-144k
+- Training on VGGSound-144k, test on VGG-SS
 ```bash
 bash scripts/test_VGGSound.sh
 ```
