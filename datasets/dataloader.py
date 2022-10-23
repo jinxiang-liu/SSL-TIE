@@ -48,9 +48,9 @@ class GetAudioVideoDataset(Dataset):
         self.args = args
 
         if args.dataset_mode == 'VGGSound':
-            args.trainset_path = '/GPFS/public/VGGSound/'
+            args.trainset_path = args.trainset_path
         elif args.dataset_mode == 'Flickr':
-            args.trainset_path = '/GPFS/public/Flickr-SoundNet/'
+            args.trainset_path = args.Flickr_trainset_path
 
         # Debug with a small dataset
         if args.debug:
