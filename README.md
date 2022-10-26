@@ -75,7 +75,7 @@ Please refer to [Learning to Localize Sound Sources](https://github.com/ardasnck
 ## Evaluation
 
 ### Model weights
-Please download the pretrained model weights through the links and put them in the `ckpts` folder.
+Please download the pretrained model weights through either of the links and put them in the `ckpts` folder.
 - [Google Drive](https://drive.google.com/drive/folders/1KZxXbPilvJNCPaUeAeZAsUKgZoj9R9qJ?usp=sharing)
 - [Baidu Pan](https://pan.baidu.com/s/1tripjJWIK2Ed_zErCAU4pw) Extracting code:`bqip`
 
