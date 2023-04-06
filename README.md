@@ -115,9 +115,9 @@ Download the retrieval splits with either of the links:
 - [Baidu Pan](https://pan.baidu.com/s/1tripjJWIK2Ed_zErCAU4pw) Extracting code:`bqip`
 
 ## Acknowledgement
-We thanks Honglie[@hche11](https://github.com/hche11) for providing some of the codes.
+We thank Honglie[@hche11](https://github.com/hche11) for providing some of the codes.
 
-We also thanks the authors for providing the datasets, please consider also citing the works.
+We also thank the authors for providing the datasets, please consider also citing the works.
   - VGGSound
     - [VGG-SOUND](https://www.robots.ox.ac.uk/~vgg/data/vggsound/)
     - [VGG-SS](https://www.robots.ox.ac.uk/~vgg/research/lvs/)
